@@ -1,9 +1,7 @@
 <?php
-//require_once $_SERVER['DOCUMENT_ROOT'] . "/groepswerk/03/1/Model/Config.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/groepswerk_api/Model/Config.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/groepswerk/03/1/Model/Config.php";
 
-//$config = new Config( $path = "/groepswerk/03/1" );
-$config = new Config( $path = "/groepswerk_api" );
+$config = new Config( $path = "/groepswerk/03/1" );
 $_application_folder = $config->getApplicationFolder();
 $_root_folder = $config->getRootFolder();
 

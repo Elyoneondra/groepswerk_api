@@ -14,6 +14,7 @@ class Container
     private $flowerLoader;
     private $uploadService;
     private $authentication;
+    private $taskLoader;
 
     /**
      * @param Config $config
@@ -141,5 +142,17 @@ class Container
             $this->authentication = new Authentication( $this->getDBM(), $this->getMessageService() );
         }
         return $this->authentication;
+    }
+
+    /**
+     * @return TaskLoader
+     */
+
+    public function getTaskLoader()
+    {
+        if ( $this->taskLoader === null ){
+            $this->taskLoader = new TaskLoader( $this->getMessageService() );
+        }
+        return $this->taskLoader;
     }
 }

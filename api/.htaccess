@@ -7,7 +7,7 @@ RewriteCond %{HTTP:Authorization} ^(.+)$
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
 # Exclude Redirects for some files or file extensions
-RewriteCond %{REQUEST_URI} !=/download_taken.php
+RewriteCond %{REQUEST_URI} !=/index.php
 RewriteCond %{REQUEST_URI} !.*\.png$ [NC]
 RewriteCond %{REQUEST_URI} !.*\.jpg$ [NC]
 RewriteCond %{REQUEST_URI} !.*\.css$ [NC]

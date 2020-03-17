@@ -3,6 +3,11 @@
 
 class TaskLoader
 {
+    public function __construct( DBInterface $DBI )
+    {
+        $this->dbinterface = $DBI;
+    }
+
     public function getTasks(){
 
         echo json_encode();
