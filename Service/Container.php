@@ -151,7 +151,7 @@ class Container
     public function getTaskLoader()
     {
         if ( $this->taskLoader === null ){
-            $this->taskLoader = new TaskLoader( $this->getMessageService() );
+            $this->taskLoader = new TaskLoader( $this->getDBM() );
         }
         return $this->taskLoader;
     }

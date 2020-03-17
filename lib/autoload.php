@@ -10,6 +10,7 @@ require_once $_root_folder . "/Model/AbstractItem.php";
 require_once $_root_folder . "/Model/City.php";
 require_once $_root_folder . "/Model/Flower.php";
 require_once $_root_folder . "/Model/User.php";
+require_once $_root_folder . "/Model/Task.php";
 
 //load Services
 require_once $_root_folder . "/Service/Authentication.php";
@@ -28,6 +29,7 @@ require_once $_root_folder . "/Service/MessageService.php";
 require_once $_root_folder . "/Service/UploadService.php";
 require_once $_root_folder . "/Service/DownloadService.php";
 require_once $_root_folder . "/Service/ViewService.php";
+require_once $_root_folder . "/Service/TaskLoader.php";
 
 session_start();
 
