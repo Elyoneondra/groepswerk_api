@@ -10,7 +10,6 @@ require_once $_root_folder . "/Model/AbstractItem.php";
 require_once $_root_folder . "/Model/City.php";
 require_once $_root_folder . "/Model/Flower.php";
 require_once $_root_folder . "/Model/User.php";
-require_once $_root_folder . "/Model/Task.php";
 
 //load Services
 require_once $_root_folder . "/Service/Authentication.php";
