@@ -14,11 +14,9 @@ if($url_parts[5] === 'taken') {
     switch ($requestMethod) {
         case 'GET':
             echo $taskLoader->getTasks();
-            echo "get";
             break;
         case 'POST':
             echo  $taskLoader->addTask();
-            echo "post";
             break;
         default:
             echo 'ERROR';

@@ -12,7 +12,7 @@ class TaskLoader
     public function getTasks(){
         $tasksData = $this->dbinterface->getData('SELECT * FROM taak');
 
-        return json_encode($tasksData );
+        return json_encode($tasksData);
 
     }
 
